@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Asset Data</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <fw-pagination id="pagination" per-page="30" style="padding-left: 80%;"></fw-pagination>
+  <div class="container">
+    <div class="row row-cols-2">
+  <fw-data-table id="datatable" label="Data table 51" show-settings="true">
+  </fw-data-table>
+</div>
+</div>
+  <fw-modal id='large' icon="agent" size="80%" hide-footer="true">
+    <fw-modal-title>
+      <span id="name"></span>
+    </fw-modal-title>
+    <fw-modal-content >
+      <div>
+        <fw-data-table id="assetdatatable" label="Data table" show-settings="true"  >
+        </fw-data-table>
+      </div>
+    </fw-modal-content>
+  </fw-modal>
+
+
+  <script src="{{{appclient}}}"></script>
+  <script src="https://static.freshdev.io/fdk/2.0/assets/fresh_client.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="scripts/app.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+</body>
+
+</html>
